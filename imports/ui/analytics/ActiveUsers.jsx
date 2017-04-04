@@ -45,6 +45,15 @@ export default class ActiveUsers extends Component {
         var that = this;
         var csv ;
         Meteor.call('analytics.ActiveUsers',props.params.dateQuery,props.params.hotspot,props.params.project, function(er, rs){
+//             console.log(rs);
+//             rs = {
+//                 data : {
+//                     aggregations : [
+//                         ['Wed Mar 29 2017 00:00:00 GMT+0700 (ICT)', 892,376],
+//                         ['Thu Mar 30 2017 00:00:00 GMT+0700 (ICT)', 921, 426]
+//                     ]
+//                 }
+//             }
             csv = Papa.unparse({
                 fields: ['Categories', 'Visits', 'Unique Visitors'],
                 data: rs.data.aggregations
