@@ -265,7 +265,7 @@ export default createContainer((props) => {
     const todosHandle = Meteor.subscribe('projectsByUser',userId);
     const loading = !todosHandle.ready();
     return {
-        projects: Projects.find({}).fetch(),
+        projects: Projects.find({}).fetch(),//projects : [{_id : '123', name : 'Demo', owner : '456'}]
         loading,
         currentUser : Meteor.user()
     };
