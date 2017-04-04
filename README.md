@@ -11,4 +11,6 @@
   - HighCharts : https://github.com/highcharts/highcharts
   - React Popup : https://github.com/minutemailer/react-popup
   - React Number Format : https://github.com/s-yadav/react-number-format
+  - React Pagination : https://github.com/vayser/react-js-pagination
+  - Tracker Component : https://github.com/studiointeract/tracker-component
   
