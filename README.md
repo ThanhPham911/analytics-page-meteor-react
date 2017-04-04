@@ -2,8 +2,7 @@
 1. Backend : https://www.meteor.com/
 2. Node Modules : 
   - React Router : https://github.com/reacttraining/react-router
-  
-  - React Bootstrap : https://github.com/react-bootstrap
+  - React Bootstrap : https://github.com/react-bootstrap
   - React Select : https://github.com/JedWatson/react-select/
   - React Sidenav : https://github.com/wmira/react-sidenav
   - HighCharts : https://github.com/highcharts/highcharts
