@@ -1,4 +1,4 @@
-# analytics-page-meteor-react
+# Analytics Page for Intant Apps
 1. Backend : https://www.meteor.com/
 
   https://www.meteor.com/tutorials/react/creating-an-app
