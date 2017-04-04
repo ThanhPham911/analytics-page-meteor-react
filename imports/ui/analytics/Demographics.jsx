@@ -41,6 +41,7 @@ export default class Demographics extends Component {
         var that = this;
 
         Meteor.call('analytics.getMac',props.params.dateQuery,props.params.hotspot,props.params.project, function(er, rs){
+            //rs = ["C0:9F:05:23:20:25", "B0:47:BF:43:BD:E2", "14:1F:78:55:2F:2B", "5C:F8:A1:81:9B:DC"];
             if(that._isMounted){
                 that.setState({
                     Mac : rs,
