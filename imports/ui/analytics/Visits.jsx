@@ -42,6 +42,7 @@ export default class Visits extends Component {
         var that = this;
 
         Meteor.call('analytics.Visits',props.params.dateQuery,props.params.hotspot,props.params.project,props.params.events, function(er, rs){
+            //rs = 1813;
             if(that.props.handleVisit){
                 that.props.handleVisit(rs);
             }
