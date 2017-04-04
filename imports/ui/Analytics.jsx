@@ -221,50 +221,6 @@ class Analytics extends Tracker.Component {
         })
     }
 
-    renderMenu(){
-        return _.map(this.state.menu, function(val,key){
-            return {value : val.value, label : val.label}
-        })
-    }
-
-    handleMenuChange(menu){
-        var filterMenu = _.filter(this.state.menu,function(num){
-            return num.value == menu.value;
-        })
-
-        if(filterMenu[0].sub){
-            this.setState({
-                subMenu : filterMenu[0].sub,
-                metricSubMenu : filterMenu[0].sub[0],
-                hasSubMenu : true
-            })
-
-            history.push('/'+ menu.value + '/' + filterMenu[0].sub[0].value);
-
-        }else {
-            this.setState({
-                subMenu : [],
-                metricSubMenu : {},
-                hasSubMenu : false
-            })
-            history.push('/'+ menu.value);
-        }
-
-        this.setState({
-            metricMenu : menu,
-        })
-
-    }
-
-    handleSubMenuChange(submenu){
-
-        history.push('/'+ this.state.metricMenu.value + '/' + submenu.value);
-
-        this.setState({
-            metricSubMenu : submenu,
-        })
-    }
-
     renderChildren() {
         return (
             <div>
