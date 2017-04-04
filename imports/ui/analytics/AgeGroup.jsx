@@ -51,7 +51,11 @@ export default class AgeGroup extends Component {
         var csv ;
 
         Meteor.call('analytics.GroupAge',props.Mac, function(er, rs){
-           
+//            rs = [
+//                {_id : "13 - 17", count : 16},
+//                {_id : "18 - 24", count : 62},
+//                {_id : "25 -34", count : 94 }
+//                ];
             var data;
             data = _.reject(rs, function(num){
                 return num._id == 'Unknown';
